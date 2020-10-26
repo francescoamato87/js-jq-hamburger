@@ -1,16 +1,13 @@
 
     // ............H A M B U R G H E R..............
 
-var hamburgerMenu = $('hamburger-menu ul li a');
+var hamburgerMenu = $('.hamburger-menu');
 
 hamburgerMenu.click( function () {
-$('.hamburgher-menu').hide('slow');
+$('.hamburgher-menu').slideDown('slow');
 });
 
-var hidden;
 // solo i figli della lista
-$('.header-right a i').click( function() {
-  if (hidden = true){
-    $('.hamburger-menu').show('slow');
-  }
+$('.header-right').click( function() {
+  $('.hamburger-menu').slideToggle('slow');
 });
